@@ -1,0 +1,321 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: o;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+    /*border: 1px solid red;*/
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+ 
+  .col-1 {width: 8.33%;}
+  .col-2 {width: 16.66%;}
+  .col-3 {width: 25%;}
+  .col-4 {width: 33.33%;}
+  .col-5 {width: 41.66%;}
+  .col-6 {width: 50%;}
+  .col-7 {width: 58.33%;}
+  .col-8 {width: 66.66%;}
+  .col-9 {width: 75%;}
+  .col-10 {width: 83.33%;}
+  .col-11 {width: 91.66%;}
+  .col-12 {width: 100%;}
+
+body {
+    font-family: 'Muli', sans-serif;
+}
+
+.nav {
+    height: 70px;
+    width: 100%;
+    background-color: #660000;
+    position: relative;
+}
+  
+.nav > .nav-header {/*Logo*/
+    display: inline;
+}
+  
+.nav > .nav-header > .nav-title {/*Logo*/
+    display: inline-block;
+    padding: 10px;
+}
+.nav > .nav-header > .nav-title > img{/*Logo*/
+    width: 50px;
+    width: 50px;
+}
+  
+.nav > .nav-btn {
+    display: none;
+}
+  
+.nav > .nav-links {
+    display: inline;
+    float: right;
+    font-size: 18px;
+    
+}
+  
+.nav > .nav-links > a {
+    display: inline-block;
+    height: 70px;
+    padding: 25px 15px;
+    text-decoration: none;/*Remove the undarline of a tags*/
+    color: #efefef;
+}
+  
+.nav > .nav-links > a:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-links > a[href="login.html"]{
+    padding-right: 25px;
+    padding-left: 25px;
+    font-weight: 700;
+}
+
+.nav > #nav-check {
+    display: none;
+}
+  
+@media (max-width:768px) {
+    .nav > .nav-btn {   /*Hamburger btn*/
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      height: 100%;
+    }
+    .nav > .nav-btn > label {/*Hamburger btn box*/
+      display: inline-block;
+      width: 60px;
+      height: 65px;
+      padding: 20px;
+    }
+    .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+    .nav > .nav-btn > label > span {/*Hamburger btn layers*/
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid #eee;
+    }
+    .nav > .nav-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      background-color: #333;
+      height: 0px;/*So it not display*/
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 10vh;
+      left: 0px;
+      z-index: 2;
+    }
+    .nav > .nav-links > a {
+      display: block;
+      width: 100%;
+    }
+    .nav > #nav-check:not(:checked) ~ .nav-links {
+      height: 0px;
+    }
+    .nav > #nav-check:checked ~ .nav-links {
+      height: calc(100vh - 50px);/*Calculate the width of the height*/
+      overflow-y: auto;
+    }
+    
+  }
+
+.banner{
+    width: 100%;
+    height: 90vh;
+    background-image: linear-gradient(rgba(65, 64, 64, 0.75),rgba(0, 0, 0, 0.75)),url(img/bg-image-1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.form_div{/*White form div*/
+    background-color: #ffffff;
+    height: auto;
+    padding: 2rem;
+    padding-bottom: 2.5rem;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    max-width: 600px;
+    margin: 15vh auto 0 auto;
+}
+#login h1{
+    text-align: center;
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+table{
+    width: 80%;
+    margin: 0 10%;
+    font-size: 1.3rem;
+}
+input[type="text"],input[type="password"]
+{
+    font-size: 1.4rem;
+    width: 100%;
+    border: 1px solid #222629;
+    padding: 0.3rem;
+}
+#user_name
+{
+    margin-bottom: 1rem;
+}
+td{
+    padding: 0.2rem;
+}
+#btn_col{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+}
+#btn_col input{
+    color: white;
+    background-color: #660000;
+    width: 80%;
+    padding: 0.7rem 0;
+    margin-top: 1rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    cursor: pointer;
+}
+#btn_col input:hover{
+    background-color: #582d2d;
+}
+#show_pwd{
+  cursor: pointer;
+}
+.container_checkbox{
+    width: 80%;
+    margin: 0 10%;
+    font-size: 1.0rem;
+}
+#form_botton_div{
+    text-align: center;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    line-height: 1.3;
+}
+#form_botton_div a{
+    text-decoration: none;
+    color: #660000;
+}
+.error{
+  background: #f2dede;
+  color: #a94442;
+  padding: 10px;
+  width: 95%;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+  /*footer section*/
+footer{
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: #ffffff;
+    background-color: #660000;
+    width: 100%;
+    border-top: 3px black solid;
+  }
+  #footer_logo{
+    width: 200px;
+    margin: auto;
+  }
+  footer > div > div{
+    padding: 3rem 0;
+  }
+  footer h5{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+  }
+  footer p{
+    font-size: 1.2rem;
+    padding-left: 0.5rem;
+    margin-bottom: 0.4rem;
+    cursor: pointer;
+  }
+  footer p:hover{
+    color: #c25832;
+  }
+  .clm{
+    display: flex;
+    justify-content: center;
+  }
+  .f_item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #social_hTag{
+    text-align: center;
+  }
+  .socialmedia_logo{
+    width: 40px;
+    height: auto;
+    margin: 0 4px;
+    cursor: pointer;
+  }
+  #soTag{
+    display: flex;
+    justify-content: center;
+  }
+
+  /*Responcive*/
+@media only screen and (max-width: 1024px){
+    .col-t-1 {width: 8.33%;}
+    .col-t-2 {width: 16.66%;}
+    .col-t-3 {width: 25%;}
+    .col-t-4 {width: 33.33%;}
+    .col-t-5 {width: 41.66%;}
+    .col-t-6 {width: 50%;}
+    .col-t-7 {width: 58.33%;}
+    .col-t-8 {width: 66.66%;}
+    .col-t-9 {width: 75%;}
+    .col-t-10 {width: 83.33%;}
+    .col-t-11 {width: 91.66%;}
+    .col-t-12 {width: 100%;}
+}
+@media only screen and (max-width: 768px){
+    .col-m-1 {width: 8.33%;}
+    .col-m-2 {width: 16.66%;}
+    .col-m-3 {width: 25%;}
+    .col-m-4 {width: 33.33%;}
+    .col-m-5 {width: 41.66%;}
+    .col-m-6 {width: 50%;}
+    .col-m-7 {width: 58.33%;}
+    .col-m-8 {width: 66.66%;}
+    .col-m-9 {width: 75%;}
+    .col-m-10 {width: 83.33%;}
+    .col-m-11 {width: 91.66%;}
+    .col-m-12 {width: 100%;}
+}

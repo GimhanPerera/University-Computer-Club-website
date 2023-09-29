@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/Uni logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="index.js"></script>
+    <script src="submitForm.js"></script>
+    <title>Home page | UOKC Club</title>
+</head>
+<body>
+    <!--Header-->
+    <div class="nav">
+        <input type="checkbox" id="nav-check"><!--In default hidden-->
+        <div class="nav-header">
+          <div class="nav-title">
+            <img src="img/Uni logo.png" alt="University logo">
+          </div>
+        </div>
+
+        <!--Hamburger btn-->
+        <div class="nav-btn"><!--In default hidden-->
+          <label for="nav-check"><!--In default hidden-->
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+        <!--END Hamburger btn-->
+        
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="news.html">News</a>
+          <a href="question.html">FAQ</a>
+          <a href="uniLife.html">UniLife</a>
+          <a href="login.php">Log in</a>
+        </div>
+    </div>
+
+    <!--Main section-->
+    <div class="banner">
+      <div>
+        <h1>Computer Club</h1>
+        <h2>University of Kelaniya</h2>
+        <p>Welcome to the vibrant digital hub of knowledge and innovation, the Computer Club at the University of Kelaniya!
+           As we embark on a journey of discovery in the ever-evolving world of technology, our club serves as a dynamic 
+           platform for students who share a passion for all things computer-related.</p>
+           <div id="scroll_btn">
+            <a href="#"><span></span><span></span><span></span>Scroll</a>
+           </div>
+      </div>
+    </div>
+
+    <!--Event section-->
+    <div class="row event-section" id="nextone">
+      <div class="row title">
+        <h2>Upcoming Events</h2>
+      </div>
+      <div class="row">
+        <div class="col-4 col-t-6 col-m-12">
+          <div class="card">
+            <img src="img/hackx.jpg" class="card_img">
+            <div class="card_header">Hackx</div>
+            <p class="card_discription">Inter-University Startup
+              Challenge organized by the Computer Cllub, University of Kelaniya.
+            </p>
+            <div><a href="#" class="card_btn">Read More</a></div>
+          </div>
+        </div>
+        <div class="col-4 col-t-6 col-m-12">
+          <div class="card">
+            <img src="img/hackx jr.jpg" class="card_img">
+            <div class="card_header">Hackx Jr</div>
+            <p class="card_discription">Inter-school hackathon organized by the Computer Club, University of Kelaniya.
+            </p>
+            <div><a href="#" class="card_btn">Read More</a></div>
+          </div>
+        </div>
+        <div class="col-4 col-t-12">
+          <div class="card">
+            <img src="img/exposition.jpg" class="card_img">
+            <div class="card_header">Exposition</div>
+            <p class="card_discription">Exposition Magazine is a proud product of the Computer Club, University of Kelaniya.
+            </p>
+            <div><a href="#" class="card_btn">Read More</a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--News section-->
+    <div class="row news-section">
+      <div class="row title">
+        <h2>News</h2>
+      </div>
+      <div class="row">
+        <div class="col-4 col-t-6 col-m-12">
+          <div class="card">
+            <img src="img/news1.jpg" class="card_img">
+            <div class="card_header">A Donation by IMBS Green Campus to the University of Kelaniya</div>
+            <p>A valuable donation of 50 beds (25 bunk beds) of IMBS Green Campus, to the University of Kelaniya's newly established hostel facility took place on the 21st of August 2023, at the office of the Vice-Chancellor.</p>
+            <div><a href="#" class="card_btn">Read More</a></div>
+          </div>
+        </div>
+        <div class="col-4 col-t-6 col-m-12">
+          <div class="card">
+            <img src="img/news2.jpg" class="card_img">
+            <div class="card_header">Senior Prof. Nilanthi Renuka de Silva Assumed Duties as the Vice Chancellor of the University of Kelaniya</div>
+            <p>Senior Prof. Nilanthi Renuka de Silva, MBBS (Colombo), MSc (London), MD (Colombo), assumed duties as the Vice Chancellor of the University...</p>
+            <div><a href="#" class="card_btn">Read More</a></div>
+          </div>
+        </div>
+        <div class="col-4 col-t-12">
+          <div class="card">
+            <img src="img/news3.jpg" class="card_img">
+            <div class="card_header">Erasmus+ student mobility grantees meet the Vice Chancellor</div>
+            <p>University of Kelaniya has benefitted from Erasmus staff and student mobility grants funded by the European Commission since 2014.</p>
+            <div><a href="#" class="card_btn">Read More</a></div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 seeAll_div">
+        <a href="news.html" class="seeAll">See all news</a>
+      </div>
+    </div>
+    
+    
+  
+  <!--FOOTER section-->
+  <footer>
+    <div class="row">
+        <div class="col-3 f_item col-m-12">
+            <a href="#" onclick="topFunction()" ><img class="logo" id="footer_logo" src="img/Uni logo.png" alt="logo"></a>
+        </div>
+        <div class="col-3 f_item col-m-12">
+            <div>
+                <h5>About Club</h5>
+                <p>About us</p>
+                <p>Our Services</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="col-3 f_item col-m-12">
+            <div>
+                <h5>Get help</h5>
+                <p>FAQ</p>
+                <p>Our Services</p>
+                <p>Privacy Policy</p>
+            </div>
+        </div>
+        <div class="col-3 f_item col-m-12">
+            <div>
+                <h5 id="social_hTag">Social Media</h5>
+                <div id="soTag">
+                    <a href="#"><img class="socialmedia_logo" src="img/fb_icon_white.png" alt="logo"></a>
+                    <a href="#"><img class="socialmedia_logo" src="img/insta_icon_white.png" alt="logo"></a>
+                    <a href="#"><img class="socialmedia_logo" src="img/yt_icon_white.png" alt="logo"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
